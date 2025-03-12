@@ -1,0 +1,20 @@
+{
+  "sns_handler-role": {
+    "predefined_policies": [],
+    "principal_service": "lambda",
+    "resource_type": "iam_role",
+    "custom_policies": [
+      "lambda-basic-execution"
+    ],
+    "policy":[
+      {
+        "Effect":"Allow",
+        "Action":[
+          "sns:Subscribe",
+          "sns:Publish"
+        ]
+      }
+    ],
+    "tags": {}
+  }
+}
